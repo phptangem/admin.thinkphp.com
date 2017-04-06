@@ -1,0 +1,162 @@
+[ 2017-04-06T22:37:09+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-06T23:06:27+08:00 ] 127.0.0.1 /__LYUI__/css/lyui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:__LYUI__
+
+[ 2017-04-06T23:06:27+08:00 ] 127.0.0.1 /__ADMIN_CSS__/.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__ADMIN_CSS__
+
+[ 2017-04-06T23:06:27+08:00 ] 127.0.0.1 /__LYUI__/js/lyui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__LYUI__
+
+[ 2017-04-06T23:06:27+08:00 ] 127.0.0.1 /Public/libs/jquery/1.x/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-06T23:06:27+08:00 ] 127.0.0.1 /__ADMIN_JS__/admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__ADMIN_JS__
+
+[ 2017-04-06T23:06:27+08:00 ] 127.0.0.1 /__LYUI__/js/lyui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__LYUI__
+
+[ 2017-04-06T23:06:27+08:00 ] 127.0.0.1 /__ADMIN_JS__/admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__ADMIN_JS__
+
+[ 2017-04-06T23:06:27+08:00 ] 127.0.0.1 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Logo
+
+[ 2017-04-06T23:07:19+08:00 ] 127.0.0.1 /Public/libs/jquery/1.x/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-06T23:07:19+08:00 ] 127.0.0.1 /__LYUI__/css/lyui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__LYUI__
+
+[ 2017-04-06T23:07:19+08:00 ] 127.0.0.1 /__ADMIN_CSS__/.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__ADMIN_CSS__
+
+[ 2017-04-06T23:07:19+08:00 ] 127.0.0.1 /__LYUI__/js/lyui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__LYUI__
+
+[ 2017-04-06T23:07:19+08:00 ] 127.0.0.1 /__ADMIN_JS__/admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载模块:__ADMIN_JS__
+
+[ 2017-04-06T23:09:23+08:00 ] 127.0.0.1 /Public/libs/jquery/1.x/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-06T23:09:23+08:00 ] 127.0.0.1 /__LYUI__/js/lyui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:__LYUI__
+
+[ 2017-04-06T23:09:23+08:00 ] 127.0.0.1 /__LYUI__/css/lyui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__LYUI__
+
+[ 2017-04-06T23:09:23+08:00 ] 127.0.0.1 /__ADMIN_CSS__/.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__ADMIN_CSS__
+
+[ 2017-04-06T23:09:23+08:00 ] 127.0.0.1 /__ADMIN_JS__/admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载模块:__ADMIN_JS__
+
+[ 2017-04-06T23:09:23+08:00 ] 127.0.0.1 /__LYUI__/js/lyui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__LYUI__
+
+[ 2017-04-06T23:09:23+08:00 ] 127.0.0.1 /__ADMIN_JS__/admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__ADMIN_JS__
+
+[ 2017-04-06T23:10:02+08:00 ] 127.0.0.1 /__LYUI__/css/lyui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__LYUI__
+
+[ 2017-04-06T23:10:02+08:00 ] 127.0.0.1 /__ADMIN_JS__/admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__ADMIN_JS__
+
+[ 2017-04-06T23:10:02+08:00 ] 127.0.0.1 /Public/libs/jquery/1.x/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-06T23:10:02+08:00 ] 127.0.0.1 /__ADMIN_CSS__/.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:__ADMIN_CSS__
+
+[ 2017-04-06T23:10:02+08:00 ] 127.0.0.1 /__LYUI__/js/lyui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__LYUI__
+
+[ 2017-04-06T23:10:02+08:00 ] 127.0.0.1 /__ADMIN_JS__/admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__ADMIN_JS__
+
