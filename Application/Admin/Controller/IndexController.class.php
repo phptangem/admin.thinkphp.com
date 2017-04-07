@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
-use Think\Controller;
-class IndexController extends Controller {
+use Common\Controller\ControllerController;
+class IndexController extends ControllerController {
     public function index(){
         \Think\Build::buildController('Admin','Public');
     }
