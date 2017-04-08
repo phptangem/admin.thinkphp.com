@@ -1,8 +1,9 @@
 <?php
 namespace Admin\Controller;
-use Common\Controller\ControllerController;
-class IndexController extends ControllerController {
+
+class IndexController extends AdminController {
     public function index(){
-        \Think\Build::buildController('Admin','Public');
+        $this->assign('meta_title', '后台首页');
+        $this->display();
     }
 }

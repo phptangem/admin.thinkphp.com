@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
-use Think\Controller;
-class PublicController extends Controller {
+use Common\Controller\ControllerController;
+class PublicController extends ControllerController {
 
 	/**
 	 * 后台登录
@@ -36,11 +36,8 @@ class PublicController extends Controller {
 				$this->logout();
 			}
     	}else{
-			if(! is_login()){
-				$this->assign('meta_title', '管理员登录');
-				$this->display();
-			}
-			$this->redirect('Admin/Index/index');
+			$this->assign('meta_title', '管理员登录');
+			$this->display();
     	}
     }
 

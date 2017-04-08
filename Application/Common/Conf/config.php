@@ -1,5 +1,13 @@
 <?php
-
+/**
+ * 全局配置文件
+ */
+$_config = array(
+    //错误页面模板
+    'TMPL_ACTION_ERROR'     =>  APP_PATH.'Home/View/Public/think/error.html', // 默认错误跳转对应的模板文件
+    'TMPL_ACTION_SUCCESS'   =>  APP_PATH.'Home/View/Public/think/success.html', // 默认成功跳转对应的模板文件
+    'TMPL_EXCEPTION_FILE'   =>  APP_PATH.'Home/View/Public/think/exception.html',// 异常页面的模板文件
+);
 // 获取数据库配置信息，手动修改数据库配置请修改./Data/db.php，这里无需改动
 if(is_file('./Data/db.php')){
     $db_config = @include './Data/db.php'; // 包含数据库连接配置
@@ -25,7 +33,7 @@ if(is_file('./Data/db.php')){
             'DB_USER'   => 'root', //用户名
             'DB_PWD'    => 'root',  //密码
             'DB_PORT'   => '3306', //端口
-            'DB_PREFIX' => 'ly',   //数据库表前缀
+            'DB_PREFIX' => 'ly_',   //数据库表前缀
             'AUTH_KEY'  => 'T;cMg<H+Bk-uUX.DVWY}#>n+NIbQIxT.?Pspu*[oT][:f%i~|}_d,z=ugtsLHBq)',   // 系统加密KEY，轻易不要修改此项，否则容易造成用户无法登录，如要修改，务必备份原key
         );
     }
@@ -34,5 +42,6 @@ if(is_file('./Data/db.php')){
 // 返回合并的配置
 
 return array_merge(
+    $_config,
     $db_config
 );
