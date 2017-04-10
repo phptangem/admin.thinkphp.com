@@ -1,6 +1,6 @@
 <?php
 namespace Common\Controller;
-use Think\Controller;
+use \Think\Controller;
 class ControllerController extends Controller {
     /**
      * 加载模板和页面输出 可以返回输出内容
@@ -12,10 +12,22 @@ class ControllerController extends Controller {
      * @param string $prefix 模板缓存前缀
      * @return mixed
      */
-    protected function display($templateFile='',$charset='',$contentType='',$content='',$prefix=''){
+    protected function display($templateFile='', $charset='', $contentType='', $content='', $prefix=''){
         if(!is_file($templateFile)){
             $depr = C('TMPL_FILE_DEPR');
+            if($templateFile == ''){
+                //如果模板文件为空 按照默认规则定位
+                $templateFile = CONTROLLER_NAME . $depr . ACTION_NAME;
+            }elseif(false === strpos($templateFile, $depr)){
+                //模板文件路径不完整
+                $templateFile = CONTROLLER_NAME . $depr . $templateFile;
+            }
+        }else{
+
         }
-        $this->view->display();
+
+        $this->assign('_admin_public_layout', C('ADMIN_PUBLIC_LAYOUT')); // 页面公共继承模版
+
+        $this->view->display($templateFile);
     }
 }

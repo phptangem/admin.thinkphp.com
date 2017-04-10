@@ -880,3 +880,51 @@ INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 ERR: 无法加载模块:Public
 
+[ 2017-04-08T18:11:21+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODULE_MARK - assumed 'MODULE_MARK' D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Application\Common\Behavior\InitModuleBehavior.class.php 第 7 行.
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-08T18:11:31+08:00 ] 127.0.0.1 /Public/libs/jquery/1.x/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODULE_MARK - assumed 'MODULE_MARK' D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Application\Common\Behavior\InitModuleBehavior.class.php 第 7 行.
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-08T18:11:32+08:00 ] 127.0.0.1 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODULE_MARK - assumed 'MODULE_MARK' D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Application\Common\Behavior\InitModuleBehavior.class.php 第 7 行.
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Logo
+
+[ 2017-04-08T18:11:39+08:00 ] 127.0.0.1 /Public/libs/jquery/1.x/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODULE_MARK - assumed 'MODULE_MARK' D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Application\Common\Behavior\InitModuleBehavior.class.php 第 7 行.
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-08T18:11:40+08:00 ] 127.0.0.1 /Public/libs/jquery/1.x/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODULE_MARK - assumed 'MODULE_MARK' D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Application\Common\Behavior\InitModuleBehavior.class.php 第 7 行.
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-08T18:11:42+08:00 ] 127.0.0.1 /Public/libs/jquery/1.x/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODULE_MARK - assumed 'MODULE_MARK' D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Application\Common\Behavior\InitModuleBehavior.class.php 第 7 行.
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+

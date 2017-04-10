@@ -36,6 +36,7 @@ class PublicController extends ControllerController {
 				$this->logout();
 			}
     	}else{
+
 			$this->assign('meta_title', '管理员登录');
 			$this->display();
     	}

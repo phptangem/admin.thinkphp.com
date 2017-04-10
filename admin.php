@@ -13,7 +13,8 @@
 
 // 检测PHP环境
 if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
-
+//报错设置
+error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 // 开启调试模式 建议开发阶段开启 部署阶段注释或者设为false
 define('APP_DEBUG',True);
 
@@ -28,7 +29,10 @@ define('MODULE_MARK', 'Admin');
 define('ENV_PRE', 'TEM_');
 
 // 定义应用目录
-define('APP_PATH','./Application/');
+define('APP_PATH', './Application/');
+
+//系统调试设置, 项目正式部署后请设置为false
+define('APP_DEBUG', @$_SERVER[ENV_PRE . 'APP_DEBUG'] ?: true);
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';

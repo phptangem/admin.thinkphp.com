@@ -8,7 +8,16 @@ class AdminController extends ControllerController {
     protected function _initialize(){
         //检查登录
         if(!is_login()){
+            //还没有登录跳转到登录页
             $this->redirect('Admin/Public/login');
+        }
+
+        C('PARSE_VAR', true);
+
+        $currentUrl = MODULE_NAME.'/'.CONTROLLER_NAME.'/'.ACTION_NAME;
+
+        if("Admin/Index/index" !== $currentUrl){
+
         }
     }
 }

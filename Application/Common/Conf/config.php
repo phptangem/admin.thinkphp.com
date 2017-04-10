@@ -7,6 +7,17 @@ $_config = array(
     'TMPL_ACTION_ERROR'     =>  APP_PATH.'Home/View/Public/think/error.html', // 默认错误跳转对应的模板文件
     'TMPL_ACTION_SUCCESS'   =>  APP_PATH.'Home/View/Public/think/success.html', // 默认成功跳转对应的模板文件
     'TMPL_EXCEPTION_FILE'   =>  APP_PATH.'Home/View/Public/think/exception.html',// 异常页面的模板文件
+
+    // 模板相关配置
+    'TMPL_PARSE_STRING'     => array(
+        '__PUBLIC__'         =>  (is_ssl() ? "https://" : 'http://') . $_SERVER['HTTP_HOST'] . __ROOT__ . '/Public',
+        '__LYUI__'           =>  (is_ssl() ? "https://" : 'http://') . $_SERVER['HTTP_HOST'] . __ROOT__ . '/Public/libs/lyui/dist',
+        '__ADMIN_CSS__'      =>  (is_ssl() ? "https://" : 'http://') . $_SERVER['HTTP_HOST'] . __ROOT__ . ltrim(APP_PATH, '.') . 'Admin/View/Public/css',
+        '__ADMIN_JS__'       =>  (is_ssl() ? "https://" : 'http://') . $_SERVER['HTTP_HOST'] . __ROOT__ . ltrim(APP_PATH, '.') . 'Admin/View/Public/js',
+
+    ),
+    // 系统功能模板
+    'ADMIN_PUBLIC_LAYOUT'   =>  APP_PATH . 'Admin/View/Public/layout.html',
 );
 // 获取数据库配置信息，手动修改数据库配置请修改./Data/db.php，这里无需改动
 if(is_file('./Data/db.php')){

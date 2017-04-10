@@ -7,5 +7,9 @@ class InitModuleBehavior extends Behavior{
         if(MODULE_MARK === 'Admin'){
             C('DEFAULT_MODULE', 'Admin');
         }
+
+        //获取数据库存储配置
+//        $database_config = D('Admin/Config')->lists();
+
     }
 }

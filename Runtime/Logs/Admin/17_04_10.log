@@ -1,0 +1,557 @@
+[ 2017-04-10T10:37:18+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T10:43:31+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 10 行.
+NOTIC: [8] Undefined variable: _page_name D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 27 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 73 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 94 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 137 行.
+NOTIC: [8] Undefined variable: _current_menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 163 行.
+SQL: select version() as v; [ RunTime:0.0000s ]
+
+[ 2017-04-10T10:43:59+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T10:46:30+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 10 行.
+NOTIC: [8] Undefined variable: _page_name D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 27 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 73 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 94 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 137 行.
+NOTIC: [8] Undefined variable: _current_menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 163 行.
+SQL: select version() as v; [ RunTime:0.0000s ]
+
+[ 2017-04-10T10:49:43+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 10 行.
+NOTIC: [8] Undefined variable: _page_name D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 27 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 73 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 94 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 137 行.
+NOTIC: [8] Undefined variable: _current_menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 163 行.
+SQL: select version() as v; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: _admin_tabs D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 406 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-10T10:49:43+08:00 ] 127.0.0.1 /admin.php/Admin/Index/__LYUI__/css/lyui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0090s ]
+ERR: 非法操作:__LYUI__
+
+[ 2017-04-10T10:49:44+08:00 ] 127.0.0.1 /admin.php/Admin/Index/__ADMIN_CSS__/.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0030s ]
+ERR: 非法操作:__ADMIN_CSS__
+
+[ 2017-04-10T10:49:45+08:00 ] 127.0.0.1 /admin.php/Admin/Index/__LYUI__/js/lyui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0030s ]
+ERR: 非法操作:__LYUI__
+
+[ 2017-04-10T10:49:45+08:00 ] 127.0.0.1 /admin.php/Admin/Index/__ADMIN_JS__/admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0020s ]
+ERR: 非法操作:__ADMIN_JS__
+
+[ 2017-04-10T11:39:36+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 10 行.
+NOTIC: [8] Undefined variable: _page_name D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 27 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 73 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 94 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 137 行.
+NOTIC: [8] Undefined variable: _current_menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 163 行.
+SQL: select version() as v; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: _admin_tabs D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 406 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T11:39:37+08:00 ] 127.0.0.1 /admin.php/Admin/Index/__ADMIN_CSS__/.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0070s ]
+ERR: 非法操作:__ADMIN_CSS__
+
+[ 2017-04-10T11:39:37+08:00 ] 127.0.0.1 /admin.php/Admin/Index/__ADMIN_JS__/admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0030s ]
+ERR: 非法操作:__ADMIN_JS__
+
+[ 2017-04-10T11:39:37+08:00 ] 127.0.0.1 /admin.php/Admin/Index/__ADMIN_JS__/admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0060s ]
+ERR: 非法操作:__ADMIN_JS__
+
+[ 2017-04-10T11:46:47+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 10 行.
+NOTIC: [8] Undefined variable: _page_name D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 27 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 73 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 94 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 137 行.
+NOTIC: [8] Undefined variable: _current_menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 163 行.
+SQL: select version() as v; [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: _admin_tabs D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 406 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T12:41:06+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 10 行.
+NOTIC: [8] Undefined variable: _page_name D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 27 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 73 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 94 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 137 行.
+NOTIC: [8] Undefined variable: _current_menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 163 行.
+SQL: select version() as v; [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: _admin_tabs D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 406 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T12:41:10+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 10 行.
+NOTIC: [8] Undefined variable: _page_name D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 27 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 73 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 94 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 137 行.
+NOTIC: [8] Undefined variable: _current_menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 163 行.
+SQL: select version() as v; [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: _admin_tabs D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 406 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T12:44:45+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 10 行.
+NOTIC: [8] Undefined variable: _page_name D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 27 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 73 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 94 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 137 行.
+NOTIC: [8] Undefined variable: _current_menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 163 行.
+SQL: select version() as v; [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: _admin_tabs D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 406 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T12:47:26+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 10 行.
+NOTIC: [8] Undefined variable: _page_name D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 27 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 73 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 94 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 137 行.
+NOTIC: [8] Undefined variable: _current_menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 163 行.
+SQL: select version() as v; [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: _admin_tabs D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 406 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T12:48:21+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 10 行.
+NOTIC: [8] Undefined variable: _page_name D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 27 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 73 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 94 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 137 行.
+NOTIC: [8] Undefined variable: _current_menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 163 行.
+SQL: select version() as v; [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: _admin_tabs D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 406 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T13:47:10+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 10 行.
+NOTIC: [8] Undefined variable: _page_name D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 27 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 73 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 94 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 137 行.
+NOTIC: [8] Undefined variable: _current_menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 163 行.
+SQL: select version() as v; [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: _admin_tabs D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 406 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T13:48:43+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 10 行.
+NOTIC: [8] Undefined variable: _page_name D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 27 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 73 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 94 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 137 行.
+NOTIC: [8] Undefined variable: _current_menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 163 行.
+SQL: select version() as v; [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: _admin_tabs D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 406 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T13:53:55+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.002001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 10 行.
+NOTIC: [8] Undefined variable: _page_name D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 27 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 73 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 94 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 137 行.
+NOTIC: [8] Undefined variable: _current_menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 163 行.
+SQL: select version() as v; [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: _admin_tabs D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 406 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T13:53:55+08:00 ] 127.0.0.1 /admin.php/Admin/Update/checkVersion.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Update
+
+[ 2017-04-10T14:53:06+08:00 ] 127.0.0.1 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_user` [ RunTime:0.0220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 10 行.
+NOTIC: [8] Undefined variable: _page_name D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 27 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 73 行.
+NOTIC: [8] Undefined variable: _menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 94 行.
+NOTIC: [8] Undefined variable: _user_auth D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 137 行.
+NOTIC: [8] Undefined variable: _current_menu_list D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 163 行.
+SQL: select version() as v; [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: _admin_tabs D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 406 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T14:53:06+08:00 ] 127.0.0.1 /admin.php/Admin/Update/checkVersion.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Update
+
