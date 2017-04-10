@@ -16,6 +16,10 @@ $_config = array(
         '__ADMIN_JS__'       =>  (is_ssl() ? "https://" : 'http://') . $_SERVER['HTTP_HOST'] . __ROOT__ . ltrim(APP_PATH, '.') . 'Admin/View/Public/js',
 
     ),
+    // 全局命名空间
+    'AUTOLOAD_NAMESPACE'   => array(
+        'Util' => APP_PATH . 'Common/Util/',
+    ),
     // 系统功能模板
     'ADMIN_PUBLIC_LAYOUT'   =>  APP_PATH . 'Admin/View/Public/layout.html',
 );
