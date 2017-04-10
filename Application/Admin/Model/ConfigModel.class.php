@@ -14,6 +14,7 @@ class ConfigModel extends Model {
     public function lists(){
         $where['status'] = array('eq', 1);
         $list            = $this->where($where)->field('name,type,type')->select();
+        $config = array();
         foreach($list as $key => $val){
             switch($val['type']){
                 case 'array':

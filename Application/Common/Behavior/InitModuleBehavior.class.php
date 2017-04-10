@@ -9,7 +9,7 @@ class InitModuleBehavior extends Behavior{
         }
 
         //获取数据库存储配置
-//        $database_config = D('Admin/Config')->lists();
-
+        $databaseConfig = D('Admin/Config')->lists();
+        dump($databaseConfig);die;
     }
 }
