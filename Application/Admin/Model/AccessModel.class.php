@@ -7,4 +7,5 @@ class AccessModel extends ModelModel {
      * @var string
      */
     protected $tableName = 'admin_access';
+
 }

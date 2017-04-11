@@ -60,3 +60,47 @@ if(!function_exists('is_ssl')) {
     }
 
 }
+
+if(!function_exists('is_weixin')) {
+    /**
+     * 是否微信访问
+     * @return bool
+     */
+    function is_weixin(){
+        if (strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger') !== false) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+if(!function_exists('is_wap')) {
+    /**
+     * 是否手机访问
+     */
+    function is_wap(){
+        if (isset($_SERVER['HTTP_VIA']) && stristr($_SERVER['HTTP_VIA'], "wap")) {
+            return true;
+        } elseif (isset($_SERVER['HTTP_ACCEPT']) && strpos(strtoupper($_SERVER['HTTP_ACCEPT']), "VND.WAP.WML")) {
+            return true;
+        } elseif (isset($_SERVER['HTTP_X_WAP_PROFILE']) || isset($_SERVER['HTTP_PROFILE'])) {
+            return true;
+        } elseif (isset($_SERVER['HTTP_USER_AGENT']) && preg_match('/(blackberry|configuration\/cldc|hp |hp-|htc |htc_|htc-|iemobile|kindle|midp|mmp|motorola|mobile|nokia|opera mini|opera |Googlebot-Mobile|YahooSeeker\/M1A1-R2D2|android|iphone|ipod|mobi|palm|palmos|pocket|portalmmm|ppc;|smartphone|sonyericsson|sqh|spv|symbian|treo|up.browser|up.link|vodafone|windows ce|xda |xda_)/i', $_SERVER['HTTP_USER_AGENT'])) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+if(!function_exists('get_cover')){
+    /**
+     * 获取上传文件路径
+     * @param null $id
+     * @param null $type
+     */
+    function get_cover($id = null, $type = null){
+        return D('Admin/Upload')->getCover($id, $type);
+    }
+}

@@ -15,8 +15,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="apple-touch-icon" type="image/x-icon" href="/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="/logo.png">
-    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.min.css">
-    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/<?php echo C('ADMIN_THEME');?>.css">
+    <link rel="stylesheet" type="text/css" href="http://admin.thinkphp.com/Public/libs/lyui/dist/css/lyui.min.css">
+    <link rel="stylesheet" type="text/css" href="http://admin.thinkphp.com/Application/Admin/View/Public/css/<?php echo C('ADMIN_THEME');?>.css">
     
     <style type="text/css">
         .background {
@@ -197,7 +197,7 @@
         <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
         <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="/Public/libs/jquery/1.x/jquery.min.js"></script>
+    <script type="text/javascript" src="http://admin.thinkphp.com/Public/libs/jquery/1.x/jquery.min.js"></script>
 </head>
 <body class="<?php echo ($_page_name); ?>">
     <div class="clearfix full-header">
@@ -250,8 +250,8 @@
     <div class="clearfix full-script">
         <div class="container-fluid">
             <input type="hidden" id="corethink_home_img" value="__HOME_IMG__">
-            <script type="text/javascript" src="__LYUI__/js/lyui.min.js"></script>
-            <script type="text/javascript" src="__ADMIN_JS__/admin.js"></script>
+            <script type="text/javascript" src="http://admin.thinkphp.com/Public/libs/lyui/dist/js/lyui.min.js"></script>
+            <script type="text/javascript" src="http://admin.thinkphp.com/Application/Admin/View/Public/js/admin.js"></script>
             <script type="text/javascript">
                 // 如果是多标签方式自动跳转后台首页
                 var admin_tabs = '<?php echo ($_admin_tabs); ?>';

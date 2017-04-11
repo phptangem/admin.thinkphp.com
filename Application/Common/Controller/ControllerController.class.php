@@ -1,7 +1,7 @@
 <?php
 namespace Common\Controller;
 use \Think\Controller;
-class ControllerController extends Controller {2
+class ControllerController extends Controller {
     /**
      * 加载模板和页面输出 可以返回输出内容
      * @access public

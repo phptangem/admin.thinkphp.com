@@ -24,6 +24,7 @@ class InitConfigBehavior extends Behavior{
 
             // 获取所有安装的模块配置
             $moduleList = D('Admin/Module')->where(array('status' => '1'))->field('name,config')->select();
+			$moduleConfig = array();
             foreach ($moduleList as $key => $val) {
 				$moduleConfig[strtolower($val['name']) . '_config']				   = json_decode($val['config'], true);
 				$moduleConfig[strtolower($val['name']) . '_config']['module_name'] = $val['name'];
@@ -61,5 +62,7 @@ class InitConfigBehavior extends Behavior{
             	$systemConfig['TAGLIB_PRE_LOAD'] = implode(',', $systemConfig['TAGLIB_PRE_LOAD']);
             }
         }
+
+		C($systemConfig);
     }
 }

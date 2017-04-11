@@ -14,10 +14,30 @@ class AdminController extends ControllerController {
 
         C('PARSE_VAR', true);
 
+        //权限检测
         $currentUrl = MODULE_NAME.'/'.CONTROLLER_NAME.'/'.ACTION_NAME;
-
         if("Admin/Index/index" !== $currentUrl){
+            if(! D('Admin/Group')->checkMenuAuth()){
+                $this->error('权限不足！', U('Admin/Index/index'));
+            }
+            $this->assign('_admin_tabs', C('ADMIN_TABS'));
+        }
 
+        //获取所有导航
+        $moduleObj = D('Admin/Module');
+        $menuList  = $moduleObj->getAllMenu();
+        $this->assign('_menu_list', $menuList); //后台主菜单
+
+        //获取左侧导航菜单
+        if( ! C('ADMIN_TABS')){
+            $parentMenuList = $moduleObj->getParentMenu();
+            if(isset($parentMenuList[0]['top'])) {
+                $currentMenuList = $menuList[$parentMenuList[0]['top']];
+            }else{
+                $currentMenuList = $menuList[MODULE_NAME];
+            }
+            $this->assign('_current_menu_list', $currentMenuList); // 后台左侧菜单
+            $this->assign('_parent_menu_list', $parentMenuList); // 后台父级菜单
         }
     }
 }
