@@ -20,8 +20,8 @@ class AdminController extends ControllerController {
             if(! D('Admin/Group')->checkMenuAuth()){
                 $this->error('权限不足！', U('Admin/Index/index'));
             }
-            $this->assign('_admin_tabs', C('ADMIN_TABS'));
         }
+        $this->assign('_admin_tabs', C('ADMIN_TABS'));
 
         //获取所有导航
         $moduleObj = D('Admin/Module');

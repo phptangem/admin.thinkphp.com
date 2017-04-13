@@ -16,8 +16,8 @@ class InitConfigBehavior extends Behavior{
             $systemConfig = D('Admin/Config')->lists();
 
             // SESSION 和 COOKIE 前缀设置避免冲突
-            $systemConfig['SESSION_PREFIXX'] = strtolower(ENV_PRE.MODIULE_MARK.'_');	//SESSION前缀
-            $systemConfig['COOKIE_PREFIXX']  = strtolower(ENV_PRE.MODIULE_MARK.'_');	//COOKIE前缀
+            $systemConfig['SESSION_PREFIXX'] = strtolower(ENV_PRE.MODULE_MARK.'_');	//SESSION前缀
+            $systemConfig['COOKIE_PREFIXX']  = strtolower(ENV_PRE.MODULE_MARK.'_');	//COOKIE前缀
 
             //SESSION数据表
             $systemConfig['SESSION_TABLE'] = C('DB_PREFIXX').'admin_session';

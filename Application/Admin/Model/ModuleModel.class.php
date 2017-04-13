@@ -96,4 +96,16 @@ class ModuleModel extends Model {
 
         return $result;
     }
+
+    /**
+     * 获取模块名称列表
+     * @return mixed
+     */
+    public function getNameList(){
+        $list = $this->getField('name', true);
+        foreach($list as $val){
+            $return[$val] = $val;
+        }
+        return $return;
+    }
 }

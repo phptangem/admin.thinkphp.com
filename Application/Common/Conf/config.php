@@ -16,12 +16,41 @@ $_config = array(
         '__ADMIN_JS__'       =>  (is_ssl() ? "https://" : 'http://') . $_SERVER['HTTP_HOST'] . __ROOT__ . ltrim(APP_PATH, '.') . 'Admin/View/Public/js',
 
     ),
+
+    // 系统功能模板
+    'LISTBUILDER_LAYOUT'   => APP_PATH . 'Common/Builder/listbuilder.html',
+    'FORMBUILDER_LAYOUT'   => APP_PATH . 'Common/Builder/formbuilder.html',
+
     // 全局命名空间
     'AUTOLOAD_NAMESPACE'   => array(
         'Util' => APP_PATH . 'Common/Util/',
     ),
     // 系统功能模板
-    'ADMIN_PUBLIC_LAYOUT'   =>  APP_PATH . 'Admin/View/Public/layout.html',
+    'ADMIN_PUBLIC_LAYOUT'  =>  APP_PATH . 'Admin/View/Public/layout.html',
+
+    // 文件上传默认驱动
+    'UPLOAD_DRIVER'        => 'Local',
+
+    // 应用配置
+    'DEFAULT_MODULE'       => 'Home',
+    'MODULE_DENY_LIST'     => array('Common'),
+    'MODULE_ALLOW_LIST'    => array('Home', 'Install'),
+
+    // 文件上传相关配置
+    'UPLOAD_CONFIG'        => array(
+        'mimes'     => '',                          // 允许上传的文件MiMe类型
+        'maxSize'   => 2 * 1024 * 1024,             // 上传文件的大小限制 (0-不做限制, 默认为2M, 后台配置会覆盖此值)
+        'autoSub'   => true,                        // 自动子目录保存文件
+        'subName'   => array('date', 'Y-m-d'),      // 子目录创建方式, [0]-函数名，[1]-参数，多个参数使用数组
+        'rootPath'  => './Uploads/',                //保存根路径
+        'savePath'  => '',                          //保存路径
+        'saveName'  => array('uniqid', ''),         // 上传文件命名规则，[0]-函数名，[1]-参数，多个参数使用数组
+        'saveExt'   => '',                          // 文件保存后缀， 空则使用原后缀
+        'replace'   => false,                       // 存在同名是否覆盖
+        'hash'      => true,                        // 是否生成hash编码
+        'callback'  => false,                       //检测文件是否存在回调函数，如果存在则返回文件信息数组
+    ),
+
 );
 // 获取数据库配置信息，手动修改数据库配置请修改./Data/db.php，这里无需改动
 if(is_file('./Data/db.php')){

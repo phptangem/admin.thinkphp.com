@@ -18,10 +18,10 @@ class Str{
                     $funcParam = trim($funcParam, "'\"");
                     //callable形式如为D('Admin/User')->select
                     if(strpos($funcName, '->')){
-                        $funcArr = explode('->', $funcName);
+                        $funcArr   = explode('->', $funcName);
                         $modelName = trim($funcArr[0], "D('\")");
                         $callArr[] = D($modelName);
-                        $callArr[] = D($funcArr[1]);
+                        $callArr[] = $funcArr[1];
                         return call_user_func($callArr, $funcParam);
                     }else{
                         //callable形式如time

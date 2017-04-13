@@ -25,9 +25,13 @@ class ControllerController extends Controller {
         }else{
 
         }
-
+        $this->assign('meta_description', C('WEB_SITE_DESCRIPTION'));
+        $this->assign('meta_keywords', C('WEB_SITE_DESCRIPTION'));
+        $this->assign('_user_auth', session('user_auth')); // 用户登录信息
         $this->assign('_admin_public_layout', C('ADMIN_PUBLIC_LAYOUT')); // 页面公共继承模版
+        $this->assign('_formbuilder_layout', C('FORMBUILDER_LAYOUT')); // FormBuilder继承模版
 
+        $this->assign('_page_name', strtolower(MODULE_NAME . '_' . CONTROLLER_NAME . '_' . ACTION_NAME));
         $this->view->display($templateFile);
     }
 }
