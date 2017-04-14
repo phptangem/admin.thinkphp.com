@@ -27,7 +27,6 @@ class ConfigController extends AdminController {
             $tabList[$key]['title']  = $value;
             $tabList[$key]['href']   = U('group', array('group' => $key));
         }
-
         //构造表单解析options
         foreach($dataList as &$data){
             $data['name']       = 'config[' . $data['name'] . ']';

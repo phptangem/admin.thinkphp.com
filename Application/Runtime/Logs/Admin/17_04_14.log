@@ -1,0 +1,15 @@
+[ 2017-04-14T16:09:50+08:00 ] 127.0.0.1 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODULE_MARK - assumed 'MODULE_MARK' D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Application\Common\Behavior\InitModuleBehavior.class.php 第 7 行.
+NOTIC: [8] Use of undefined constant ENV_PRE - assumed 'ENV_PRE' D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Application\Common\Behavior\InitModuleBehavior.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant MODULE_MARK - assumed 'MODULE_MARK' D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Application\Common\Behavior\InitModuleBehavior.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `ly_admin_config` [ RunTime:0.0030s ]
+SQL: SELECT `name`,`value`,`type` FROM `ly_admin_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ly_admin_module` [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `ly_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant MODULE_MARK - assumed 'MODULE_MARK' D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Application\Common\Behavior\InitModuleBehavior.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant MODULE_MARK - assumed 'MODULE_MARK' D:\phpStudy\WWW\thinkphp\admin.thinkphp.com\Application\Common\Behavior\InitModuleBehavior.class.php 第 37 行.
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.024001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024001s ]
+
