@@ -207,7 +207,7 @@ class ListBuilder extends ControllerController{
      * @param null $param
      * @return $this
      */
-    public function setTableColumn($name, $title, $type = null, $param = null){
+    public function addTableColumn($name, $title, $type = null, $param = null){
         $column = array(
             'name' => $name,
             'title' => $title,
@@ -575,7 +575,6 @@ class ListBuilder extends ControllerController{
             $this->assign('right_button_list', $this->_rightButtonList); // 表格右侧操作按钮
             $this->assign('alter_data_list', $this->_alterDataList); // 表格数据列表重新修改的项目
             $this->assign('extra_html', $this->_extraHtml); //是否ajax提交
-
             // 显示页面
             $template = CONTROLLER_NAME . '/' . ACTION_NAME;
             if (is_file($this->view->parseTemplate($template))) {
