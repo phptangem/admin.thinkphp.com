@@ -1,9 +1,8 @@
 <?php
 namespace Admin\Controller;
-use Common\Controller\ControllerController;
 use Util\Tree;
 use Common\Builder\ListBuilder;
-class NavController extends ControllerController {
+class NavController extends AdminController {
     public function index($group = 'main'){
 
         $keyword    = I('keyword', '', 'string');

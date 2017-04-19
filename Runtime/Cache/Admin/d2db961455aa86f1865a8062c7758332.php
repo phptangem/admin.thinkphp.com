@@ -260,7 +260,95 @@
                             <div class="tab-content ct-tab-content">
                                 
     <div class="panel-body">
-        
+        <div class="builder listbuilder-box">
+    <!-- Tab导航 -->
+    <?php if(!empty($tab_nav)): ?><div class="builder-tabs">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="nav nav-tabs">
+                        <?php if(is_array($tab_nav["tab_list"])): $i = 0; $__LIST__ = $tab_nav["tab_list"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tab): $mod = ($i % 2 );++$i;?><li class="<?php if($tab_nav['current_tab'] == $key) echo 'active'; ?>"><a href="<?php echo ($tab["href"]); ?>"><?php echo ($tab["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="form-group"></div><?php endif; ?>
+
+    <!-- 顶部工具栏按钮 -->
+    <div class="builder-toolbar">
+        <div class="row">
+            <!-- 工具栏按钮 -->
+            <?php if(!empty($top_button_list)): ?><div class="col-xs-12 col-sm-8 button-list clearfix">
+                    <div class="form-group">
+                        <?php if(is_array($top_button_list)): $i = 0; $__LIST__ = $top_button_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$button): $mod = ($i % 2 );++$i;?><a <?php echo ($button["attribute"]); ?>><?php echo ($button["title"]); ?></a>&nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
+                    </div>
+                </div><?php endif; ?>
+
+            <!-- 搜索框 -->
+            <?php if(!empty($search)): if(empty($search_form_items)): ?><div class="col-xs-12 col-sm-4 clearfix">
+                        <form class="form" method="get" action="<?php echo ($search["url"]); ?>">
+                            <div class="form-group">
+                                <div class="input-group search-form">
+                                    <input type="text" name="keyword" class="search-input form-control" value="<?php echo ($_GET["keyword"]); ?>" placeholder="<?php echo ($search["title"]); ?>">
+                                    <span class="input-group-btn"><a class="btn btn-default search-btn"><i class="fa fa-search"></i></a></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div><?php endif; endif; ?>
+        </div>
+    </div>
+
+    <!-- 数据列表 -->
+    <div class="builder-container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="builder-table">
+                    <div class="panel panel-default table-responsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                            <tr>
+                                <th><input class="check-all" type="checkbox"></th>
+                                <?php if(is_array($table_column_list)): $i = 0; $__LIST__ = $table_column_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$column): $mod = ($i % 2 );++$i;?><th><?php echo (htmlspecialchars($column["title"])); ?></th><?php endforeach; endif; else: echo "" ;endif; ?>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php if(is_array($table_data_list)): $i = 0; $__LIST__ = $table_data_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr>
+                                    <td>
+                                        <input class="ids" type="checkbox" value="<?php echo ($data[$table_data_list_key]); ?>" name="ids[]">
+                                    </td>
+                                    <?php foreach ($table_column_list as $column) :?>
+                                    <td>
+                                        <?php if ($column['name'] === 'right_button') : ?>
+                                        <?php foreach ($data['right_button'] as $rb) : ?>
+                                        <a <?php echo ($rb['attribute']); ?>><?php echo ($rb['title']); ?></a>
+                                        <?php endforeach; ?>
+                                        <?php else: ?>
+                                        <?php echo ($data[$column['name']]); ?>
+                                        <?php endif; ?>
+                                    </td>
+                                    <?php endforeach; ?>
+                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+
+                            <?php if(empty($table_data_list)): ?><tr class="builder-data-empty">
+                                    <?php $tdcolspan = count($table_column_list)+1 ?>
+                                    <td class="text-center empty-info" colspan="<?php echo ($tdcolspan); ?>">
+                                        <i class="fa fa-database"></i> 暂时没有数据<br>
+                                        <span class="small">本系统由 <a href="https://www.lingyun.net" class="text-muted" target="_blank">零云</a>强力驱动</span>
+                                    </td>
+                                </tr><?php endif; ?>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <?php if(!empty($table_data_page)): ?><ul class="pagination"><?php echo ($table_data_page); ?></ul><?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 额外功能代码 -->
+    <?php echo ($extra_html); ?>
+</div>
+
     </div>
 
                             </div>
@@ -294,7 +382,95 @@
             <?php else: ?>
                 
     <div class="panel-body">
-        
+        <div class="builder listbuilder-box">
+    <!-- Tab导航 -->
+    <?php if(!empty($tab_nav)): ?><div class="builder-tabs">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="nav nav-tabs">
+                        <?php if(is_array($tab_nav["tab_list"])): $i = 0; $__LIST__ = $tab_nav["tab_list"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tab): $mod = ($i % 2 );++$i;?><li class="<?php if($tab_nav['current_tab'] == $key) echo 'active'; ?>"><a href="<?php echo ($tab["href"]); ?>"><?php echo ($tab["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="form-group"></div><?php endif; ?>
+
+    <!-- 顶部工具栏按钮 -->
+    <div class="builder-toolbar">
+        <div class="row">
+            <!-- 工具栏按钮 -->
+            <?php if(!empty($top_button_list)): ?><div class="col-xs-12 col-sm-8 button-list clearfix">
+                    <div class="form-group">
+                        <?php if(is_array($top_button_list)): $i = 0; $__LIST__ = $top_button_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$button): $mod = ($i % 2 );++$i;?><a <?php echo ($button["attribute"]); ?>><?php echo ($button["title"]); ?></a>&nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
+                    </div>
+                </div><?php endif; ?>
+
+            <!-- 搜索框 -->
+            <?php if(!empty($search)): if(empty($search_form_items)): ?><div class="col-xs-12 col-sm-4 clearfix">
+                        <form class="form" method="get" action="<?php echo ($search["url"]); ?>">
+                            <div class="form-group">
+                                <div class="input-group search-form">
+                                    <input type="text" name="keyword" class="search-input form-control" value="<?php echo ($_GET["keyword"]); ?>" placeholder="<?php echo ($search["title"]); ?>">
+                                    <span class="input-group-btn"><a class="btn btn-default search-btn"><i class="fa fa-search"></i></a></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div><?php endif; endif; ?>
+        </div>
+    </div>
+
+    <!-- 数据列表 -->
+    <div class="builder-container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="builder-table">
+                    <div class="panel panel-default table-responsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                            <tr>
+                                <th><input class="check-all" type="checkbox"></th>
+                                <?php if(is_array($table_column_list)): $i = 0; $__LIST__ = $table_column_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$column): $mod = ($i % 2 );++$i;?><th><?php echo (htmlspecialchars($column["title"])); ?></th><?php endforeach; endif; else: echo "" ;endif; ?>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php if(is_array($table_data_list)): $i = 0; $__LIST__ = $table_data_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr>
+                                    <td>
+                                        <input class="ids" type="checkbox" value="<?php echo ($data[$table_data_list_key]); ?>" name="ids[]">
+                                    </td>
+                                    <?php foreach ($table_column_list as $column) :?>
+                                    <td>
+                                        <?php if ($column['name'] === 'right_button') : ?>
+                                        <?php foreach ($data['right_button'] as $rb) : ?>
+                                        <a <?php echo ($rb['attribute']); ?>><?php echo ($rb['title']); ?></a>
+                                        <?php endforeach; ?>
+                                        <?php else: ?>
+                                        <?php echo ($data[$column['name']]); ?>
+                                        <?php endif; ?>
+                                    </td>
+                                    <?php endforeach; ?>
+                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+
+                            <?php if(empty($table_data_list)): ?><tr class="builder-data-empty">
+                                    <?php $tdcolspan = count($table_column_list)+1 ?>
+                                    <td class="text-center empty-info" colspan="<?php echo ($tdcolspan); ?>">
+                                        <i class="fa fa-database"></i> 暂时没有数据<br>
+                                        <span class="small">本系统由 <a href="https://www.lingyun.net" class="text-muted" target="_blank">零云</a>强力驱动</span>
+                                    </td>
+                                </tr><?php endif; ?>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <?php if(!empty($table_data_page)): ?><ul class="pagination"><?php echo ($table_data_page); ?></ul><?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 额外功能代码 -->
+    <?php echo ($extra_html); ?>
+</div>
+
     </div>
 
             <?php endif; ?>

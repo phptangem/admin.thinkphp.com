@@ -30,8 +30,10 @@ class ControllerController extends Controller {
         $this->assign('_user_auth', session('user_auth')); // 用户登录信息
         $this->assign('_admin_public_layout', C('ADMIN_PUBLIC_LAYOUT')); // 页面公共继承模版
         $this->assign('_formbuilder_layout', C('FORMBUILDER_LAYOUT')); // FormBuilder继承模版
-
         $this->assign('_page_name', strtolower(MODULE_NAME . '_' . CONTROLLER_NAME . '_' . ACTION_NAME));
+        $this->assign('_listbuilder_layout', C('LISTBUILDER_LAYOUT')); // ListBuilder继承模版
+        $this->assign('_formbuilder_layout', C('FORMBUILDER_LAYOUT')); // FormBuilder继承模版
+
         $this->view->display($templateFile);
     }
 }

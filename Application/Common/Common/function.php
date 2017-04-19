@@ -104,3 +104,31 @@ if(!function_exists('get_cover')){
         return D('Admin/Upload')->getCover($id, $type);
     }
 }
+
+if(! function_exists('time_format')){
+    /**
+     * @param null $time
+     * @param string $format
+     * @return bool|string
+     */
+    function time_format($time = null, $format = 'Y-m-d H:i'){
+        $time = $time === null ? time() : intval($time);
+        return date($format, $time);
+    }
+}
+if(! function_exists('cut_str')){
+    /**
+     * @param $str
+     * @param $start
+     * @param $length
+     * @param string $charset
+     * @param bool|true $suffix
+     * @return mixed
+     */
+    function cut_str($str, $start, $length, $charset = 'utf-8', $suffix = true)
+    {
+        return \Util\Str::cutStr(
+            $str, $start, $length, $charset, $suffix
+        );
+    }
+}

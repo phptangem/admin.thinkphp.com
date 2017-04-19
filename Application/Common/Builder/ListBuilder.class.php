@@ -438,7 +438,7 @@ class ListBuilder extends ControllerController{
     }
 
     /**
-     * 显示页面
+     * 页面展示
      */
     public function display()
     {
@@ -556,33 +556,33 @@ class ListBuilder extends ControllerController{
                     $data[$column['name']] = implode(',', $data[$column['name']]);
                 }
             }
-
-            //编译top_button_list中的HTML属性
-            if ($this->_topButtonList) {
-                foreach ($this->_topButtonList as &$button) {
-                    $button['attribute'] = $this->compileHtmlAttr($button);
-                }
+        }
+        //编译top_button_list中的HTML属性
+        if ($this->_topButtonList) {
+            foreach ($this->_topButtonList as &$button) {
+                $button['attribute'] = $this->compileHtmlAttr($button);
             }
+        }
 
-            $this->assign('meta_title', $this->_metaTitle); // 页面标题
-            $this->assign('top_button_list', $this->_topButtonList); // 顶部工具栏按钮
-            $this->assign('search', $this->_search); // 搜索配置
-            $this->assign('tab_nav', $this->_tabNav); // 页面Tab导航
-            $this->assign('table_column_list', $this->_tableColumnList); // 表格的列
-            $this->assign('table_data_list', $this->_tableDataList); // 表格数据
-            $this->assign('table_data_list_key', $this->_tableDataListKey); // 表格数据主键字段名称
-            $this->assign('table_data_page', $this->_tableDataPage); // 表示个数据分页
-            $this->assign('right_button_list', $this->_rightButtonList); // 表格右侧操作按钮
-            $this->assign('alter_data_list', $this->_alterDataList); // 表格数据列表重新修改的项目
-            $this->assign('extra_html', $this->_extraHtml); //是否ajax提交
-            // 显示页面
-            $template = CONTROLLER_NAME . '/' . ACTION_NAME;
-            if (is_file($this->view->parseTemplate($template))) {
-                parent::display();
-            } else {
-                $this->assign('is_builder', 'list'); // Builder标记
-                parent::display($this->_template);
-            }
+        $this->assign('meta_title', $this->_metaTitle); // 页面标题
+        $this->assign('top_button_list', $this->_topButtonList); // 顶部工具栏按钮
+        $this->assign('search', $this->_search); // 搜索配置
+        $this->assign('tab_nav', $this->_tabNav); // 页面Tab导航
+        $this->assign('table_column_list', $this->_tableColumnList); // 表格的列
+        $this->assign('table_data_list', $this->_tableDataList); // 表格数据
+        $this->assign('table_data_list_key', $this->_tableDataListKey); // 表格数据主键字段名称
+        $this->assign('table_data_page', $this->_tableDataPage); // 表示个数据分页
+        $this->assign('right_button_list', $this->_rightButtonList); // 表格右侧操作按钮
+        $this->assign('alter_data_list', $this->_alterDataList); // 表格数据列表重新修改的项目
+        $this->assign('extra_html', $this->_extraHtml); //是否ajax提交
+
+        // 显示页面
+        $template = CONTROLLER_NAME . '/' . ACTION_NAME;
+        if (is_file($this->view->parseTemplate($template))) {
+            parent::display();
+        } else {
+            $this->assign('is_builder', 'list'); // Builder标记
+            parent::display($this->_template);
         }
     }
 
