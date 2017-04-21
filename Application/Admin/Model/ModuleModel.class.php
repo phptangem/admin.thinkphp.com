@@ -124,7 +124,7 @@ class ModuleModel extends Model {
         // 文件夹下必须有$install_file定义的安装描述文件
         $dirs = array_map('basename', glob(APP_PATH . '*', GLOB_ONLYDIR));
         foreach($dirs as $dir){
-            $configFile = realpath(APP_PATH . $dir) . '/ ' . $this->install_file();
+            $configFile = realpath(APP_PATH . $dir) . '/' . $this->install_file();
             if (Storage::has($configFile)) {
                 $moduleDirList[]                       = $dir;
                 $tempArr                               = include $configFile;
