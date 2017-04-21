@@ -1,8 +1,52 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class AccessController extends Controller {
+use Think\Page;
+use Common\Builder\ListBuilder;
+class AccessController extends AdminController {
     public function index(){
-        $this->show('<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px } a,a:hover{color:blue;}</style><div style="padding: 24px 48px;"> <h1>:)</h1><p>欢迎使用 <b>ThinkPHP</b>！</p><br/>版本 V{$Think.version}</div><script type="text/javascript" src="http://ad.topthink.com/Public/static/client.js"></script><thinkad id="ad_55e75dfae343f5a1"></thinkad><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>','utf-8');
+        $keyword = I('keyword', '', 'string');
+        $where['a.id|a.uid'] = array('like', '%' . $keyword . '%');
+        $where['a.status'] = array('egt', '0'); // 禁用和正常状态
+        $p             = !empty($_GET["p"]) ? $_GET['p'] : 1;
+        $accessObj = D('Access');
+        $dataList  = $accessObj
+            ->alias('a')
+            ->field('a.id, a.uid, a.status, u.username, g.title as group_title')
+            ->join('ly_admin_user as u ON a.uid = u.id')
+            ->join('ly_admin_group as g ON a.group = g.id')
+            ->page($p, C('ADMIN_PAGE_ROWS'))
+            ->where($where)
+            ->order('a.sort asc,a.id asc')
+            ->select();
+        $page = new Page(
+            $accessObj->where($where)
+                ->alias('a')
+                ->join('ly_admin_user as u ON a.uid = u.id')
+                ->join('ly_admin_group as g ON a.group = g.id')->count(),
+            C('ADMIN_PAGE_ROWS')
+        );
+
+        // 使用Builder快速建立列表页面。
+        $builder = new ListBuilder();
+        $builder->setMetaTitle('管理员列表')                    // 设置页面标题
+            ->addTopButton('add')                               // 添加新增按钮
+            ->addTopButton('resume')                               // 添加新增按钮
+            ->addTopButton('forbid')                            // 添加禁用按钮
+            ->addTopButton('delete')                            // 添加删除按钮
+            ->setSearch('请输入ID/UID', U('index'))
+            ->addTableColumn('id', 'ID')
+            ->addTableColumn('uid', 'UID')
+            ->addTableColumn('username', '用户名')
+            ->addTableColumn('group_title', '用户组')
+            ->addTableColumn('status', '状态', 'status')
+            ->addTableColumn('right_button', '操作', 'btn')
+            ->setTableDataList($dataList)                       // 数据列表
+            ->setTableDataPage($page->show())                   // 数据列表分页
+            ->addRightButton('edit')                            // 添加编辑按钮
+            ->addRightButton('forbid')                          // 添加禁用/启用按钮
+            ->addRightButton('delete')                          // 添加删除按钮
+            ->display();
+
     }
 }
