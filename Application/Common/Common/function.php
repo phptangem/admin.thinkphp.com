@@ -132,3 +132,10 @@ if(! function_exists('cut_str')){
         );
     }
 }
+
+if(! file_exists('get_addon_class')){
+    function get_addon_class($name){
+        $class = "Addons\\{$name}Addon";
+        return $class;
+    }
+}
