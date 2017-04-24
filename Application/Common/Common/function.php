@@ -133,9 +133,39 @@ if(! function_exists('cut_str')){
     }
 }
 
-if(! file_exists('get_addon_class')){
+if(! function_exists('get_addon_class')){
     function get_addon_class($name){
         $class = "Addons\\{$name}Addon";
         return $class;
+    }
+}
+
+if(! function_exists('select_list_as_tree')){
+    //获取所有数据并转换成以为数组
+    function select_list_as_tree($model, $map = null, $extra = null, $key = 'id'){
+        //获取列表
+        $con['status'] = array('eq', 1);
+        if ($map) {
+            $con = array_merge($con, $map);
+        }
+        $modelObj = D($model);
+        if (in_array('sort', $modelObj->getDbFields())) {
+            $list = $modelObj->where($con)->order('sort asc, id asc')->select();
+        } else {
+            $list = $modelObj->where($con)->order('id asc')->select();
+        }
+
+        //转换成树状列表(非严格模式)
+        $tree = new \Util\Tree();
+        $list = $tree->array2tree($list, 'title', 'id', 'pid', 0, false);
+        if ($extra) {
+            $result[0] = $extra;
+        }
+
+        //转换成一维数组
+        foreach ($list as $val) {
+            $result[$val[$key]] = $val['title_show'];
+        }
+        return $result;
     }
 }

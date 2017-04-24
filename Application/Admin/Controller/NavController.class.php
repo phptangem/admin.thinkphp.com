@@ -1,5 +1,6 @@
 <?php
 namespace Admin\Controller;
+use Common\Builder\FormBuilder;
 use Util\Tree;
 use Common\Builder\ListBuilder;
 class NavController extends AdminController {
@@ -57,5 +58,18 @@ class NavController extends AdminController {
             ->addRightButton('delete') // 添加删除按钮
             ->display();
 
+    }
+
+    public function add($group){
+        if(IS_POST){
+
+        }else{
+            $builder = new FormBuilder();
+            $builder->setMetaTitle('新增导航') // 设置页面标题
+                ->setPostUrl(U('', array('group' => $group)))
+                ->addFormItem('group', 'hidden', '导航分组', '导航分组')
+                ->addFormItem('pid', 'select', '上级导航', '上级导航', select_list_as_tree('Admin/Nav', array('group' => $group), '顶级导航'))
+                ->addFormItem('pid', 'select')
+        }
     }
 }
