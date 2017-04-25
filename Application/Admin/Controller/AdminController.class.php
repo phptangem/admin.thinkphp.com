@@ -40,4 +40,13 @@ class AdminController extends ControllerController {
             $this->assign('_parent_menu_list', $parentMenuList); // 后台父级菜单
         }
     }
+
+    public function setStatus($model = CONTROLLER_NAME, $script = false){
+        $ids        = I('request.ids');
+        $status     = I('request.status');
+        if(empty($ids)){
+            $this->error('选择要操作的数据');
+        }
+        $modelPrimaryKey = D($model)->getPk();
+    }
 }

@@ -28,6 +28,35 @@ class FormBuilder extends ControllerController{
     }
 
     /**
+     * 加入一个表单项
+     * @param $name
+     * @param $type
+     * @param $title
+     * @param $tip
+     * @param array $options
+     * @param string $extra
+     * @param string $extraAttr
+     * @return $this
+     */
+    public function addFormItem($name, $type, $title, $tip, $options = array(), $extra = '', $extraAttr = '')
+    {
+        $item['name']    = $name;
+        $item['type']    = $type;
+        $item['title']   = $title;
+        $item['tip']     = $tip;
+        $item['options'] = $options;
+        if (is_array($extra)) {
+            $item['extra']['class'] = $extra['class'];
+            $item['extra']['self']  = $extra['self'];
+        } else {
+            $item['extra']['class'] = $extra;
+        }
+        $item['extra']['attr']  = $extraAttr;
+        $item['value']          = '';
+        $this->_formItems[]     = $item;
+        return $this;
+    }
+    /**
      * @param $submitTitle
      * @return $this
      */
@@ -36,6 +65,14 @@ class FormBuilder extends ControllerController{
         return $this;
     }
 
+    /**
+     * @param $formData
+     * @return $this
+     */
+    public function setFormData($formData){
+        $this->_formData = $formData;
+        return $this;
+    }
     /**
      * @param $extraHtml
      * @return $this
