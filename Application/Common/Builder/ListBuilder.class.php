@@ -460,12 +460,11 @@ class ListBuilder extends ControllerController{
                     }
 
                     // 将约定的标记__data_id__替换成真实的数据ID
-                    $right_button['href'] = preg_replace(
+                    $rightButton['href'] = preg_replace(
                         '/__data_id__/i',
                         $data[$this->_tableDataListKey],
                         $rightButton['href']
                     );
-
                     // 编译按钮属性
                     $rightButton['attribute']                   = $this->compileHtmlAttr($rightButton);
                     $data['right_button'][$rightButton['name']] = $rightButton;

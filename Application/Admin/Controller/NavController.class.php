@@ -127,4 +127,41 @@ EOF;
                 ->display();
         }
     }
+
+    /**
+     * @param $group
+     * @param $id
+     */
+    public function edit($group, $id){
+        if(IS_POST){
+            $navObj = D('Admin/Nav');
+            $data   = $navObj->create();
+            if($data){
+                if ($navObj->save($data)) {
+                    $this->success('更新成功', U('index', array('group' => $group)));
+                } else {
+                    $this->error('更新失败');
+                }
+            }else{
+                $this->error($navObj->getError());
+            }
+        }else{
+            $info = D('Admin/Nav')->find($id);
+            $builder = new FormBuilder();
+            $builder->setMetaTitle('编辑导航')
+                ->addFormItem('id', 'hidden', 'ID', 'ID')
+                ->addFormItem('group', 'hidden', '导航分组', '导航分组')
+                ->addFormItem('pid', 'select', '上级导航', '上级导航', select_list_as_tree('Admin/Nav', array('group' => $group), '顶级导航'))
+                ->addFormItem('title', 'text', '导航标题', '导航前台显示标题')
+                ->addFormItem('type', 'radio', '导航类型', '导航类型',  D('Admin/Nav')->navType())
+                ->addFormItem('url', 'text', '外链URL地址','支持http://格式或者TP的U函数解析格式', null, $info['type'] === 'link' ? '' : 'hidden')
+                ->addFormItem('content', 'kindeditor', '单页内容', '单页内容', null, $info['type'] === 'page' ? '' : 'hidden')
+                ->addFormItem('target', 'radio', '打开方式', '打开方式', array('' => '当前窗口', '_blank' => '新窗口打开'))
+                ->addFormItem('icon', 'icon', '图标', '导航图标')
+                ->addFormItem('sort', 'num', '排序', '用于显示的顺序')
+                ->setFormData($info)
+                ->setExtraHtml($this->extraHtml)
+                ->display();
+        }
+    }
 }
