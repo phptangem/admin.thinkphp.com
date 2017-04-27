@@ -1,5 +1,6 @@
 <?php
 namespace Admin\Controller;
+use Common\Builder\FormBuilder;
 use Common\Builder\ListBuilder;
 use Think\Page;
 class UserController extends AdminController {
@@ -41,5 +42,25 @@ class UserController extends AdminController {
             ->addRightButton('forbid') // 添加禁用/启用按钮
             ->addRightButton('recycle') // 添加删除按钮
             ->display();
+    }
+    public function add(){
+        if(IS_POST){
+
+        }else{
+            $builder = new FormBuilder();
+            $builder->setMetaTitle('新增用户')
+                ->setPostUrl(U('add'))
+                ->addFormItem('reg_type', 'hidden', '注册方式', '注册方式')
+                ->addFormItem('nickname', 'text', '昵称', '昵称')
+                ->addFormItem('username', 'text', '用户名', '用户名')
+                ->addFormItem('password', 'password', '密码', '密码')
+                ->addFormItem('email', 'text', '邮箱', '邮箱')
+                ->addFormItem('email_bind', 'radio', '邮箱绑定', '手机绑定', array('1' => '已绑定', '0' => '未绑定'))
+                ->addFormItem('mobile', 'text', '手机号', '手机号')
+                ->addFormItem('mobile_bind', 'radio', '手机绑定', '手机绑定', array('1' => '已绑定', '0' => '未绑定'))
+                ->addFormItem('avatar', 'picture', '头像', '头像')
+                ->setFormData(array('reg_type' => 'admin'))
+                ->display();
+        }
     }
 }

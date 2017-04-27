@@ -87,5 +87,6 @@ if(is_file('./Data/db.php')){
 
 return array_merge(
     $_config,
-    $db_config
+    $db_config,
+    include APP_PATH . '/Common/Builder/config.php' // 包含Builder配置
 );

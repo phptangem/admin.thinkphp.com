@@ -21,10 +21,10 @@ class GroupController extends AdminController {
         // 使用Builder快速建立列表页面。
         $builder = new ListBuilder();
         $builder->setMetaTitle('部门列表')  // 设置页面标题
-            ->addRightButton('add')         // 添加新增按钮
-            ->addRightButton('resume')      // 添加启用按钮
-            ->addRightButton('forbid')      // 添加禁用按钮
-            ->addRightButton('delete')      // 添加删除按钮
+            ->addTopButton('add')         // 添加新增按钮
+            ->addTopButton('resume')      // 添加启用按钮
+            ->addTopButton('forbid')      // 添加禁用按钮
+            ->addTopButton('delete')      // 添加删除按钮
             ->setSearch('请输入ID/部门名称', U('index'))
             ->addTableColumn('id', 'ID')
             ->addTableColumn('title_show', '标题')
@@ -42,5 +42,29 @@ class GroupController extends AdminController {
             )
             ->display();
 
+    }
+    public function add(){
+        if(IS_POST){
+
+        }else{
+            $where['status'] = array('egt', 0);
+            $allGroup = select_list_as_tree('Group', $where, '顶级部门');
+
+            // 获取功能模块的后台菜单列表
+            $tree = new Tree();
+            $moduleList = D('Module')
+                ->where(array('status' => 1))
+                ->select();
+            $allModuleMenuList = array();
+            foreach($moduleList as $key => $module){
+                $temp   = json_decode($module['admin_menu'], true);
+                $menuListItem = $tree->list2tree($temp);
+                $allModuleMenuList[$module['name']] = $menuListItem[0];
+            }
+            $this->assign('all_module_menu_list', $allModuleMenuList);
+            $this->assign('all_group', $allGroup);
+            $this->assign('meta_title', '新增部门');
+            $this->display('add_edit');
+        }
     }
 }

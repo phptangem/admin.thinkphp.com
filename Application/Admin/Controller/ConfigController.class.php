@@ -122,4 +122,85 @@ class ConfigController extends AdminController {
         }
         $this->error('参数为空,请重新尝试！');
     }
+
+    /**
+     * @param $id
+     */
+    public function edit($id){
+        if(IS_POST){
+            $configObj = D('Config');
+            $data      = $configObj->create();
+            if ($data) {
+                if ($configObj->save($data)) {
+                    S('DB_CONFIG_DATA', null);
+                    $this->success('更新成功', U('index'));
+                } else {
+                    $this->error('更新失败');
+                }
+            } else {
+                $this->error($configObj->getError());
+            }
+        }else{
+            $formData = D('Config')->find($id);
+            // 获取Builder表单类型转换成一维数组
+            $formItemType = C('FORM_ITEM_TYPE');
+            foreach($formItemType as $key => $val){
+                $formItemType[$key] = $val[0];
+            }
+            // 使用FormBuilder快速建立表单页面。
+            $builder = new FormBuilder();
+            $builder->setMetaTitle('编辑配置')
+                ->setPostUrl(U('edit'))
+                ->addFormItem('id', 'hidden', 'ID', 'ID')
+                ->addFormItem('group', 'select', '配置分组', '配置所属的分组', C('CONFIG_GROUP_LIST'))
+                ->addFormItem('type', 'select', '配置类型', '配置类型的分组', $formItemType)
+                ->addFormItem('name', 'text', '配置名称', '配置名称')
+                ->addFormItem('title', 'text', '配置标题', '配置标题')
+                ->addFormItem('value', 'textarea', '配置值', '配置值')
+                ->addFormItem('options', 'textarea', '配置项', '如果是单选、多选、下拉等类型 需要配置该项')
+                ->addFormItem('tip', 'textarea', '配置说明', '配置说明')
+                ->addFormItem('sort', 'num', '排序', '用于显示的顺序')
+                ->setFormData($formData)
+                ->display();
+
+        }
+    }
+
+    /**
+     * 新增配置
+     */
+    public function add(){
+        if(IS_POST){
+            $configObj = D('Config');
+            $data          = $configObj->create();
+            if ($data) {
+                if ($configObj->add($data)) {
+                    S('DB_CONFIG_DATA', null);
+                    $this->success('新增成功', U('index'));
+                } else {
+                    $this->error('新增失败');
+                }
+            } else {
+                $this->error($configObj->getError());
+            }
+        }else{
+            // 获取Builder表单类型转换成一维数组
+            $formItemType = C('FORM_ITEM_TYPE');
+            foreach($formItemType as $key => $val){
+                $formItemType[$key] = $val[0];
+            }
+            $builder = new FormBuilder();
+            $builder->setMetaTitle('新增配置')
+                ->setPostUrl(U('add'))
+                ->addFormItem('group', 'select', '配置分组', '配置所属的分组', C('CONFIG_GROUP_LIST'))
+                ->addFormItem('type', 'select', '配置类型', '配置类型的分组', $formItemType)
+                ->addFormItem('name', 'text', '配置名称', '配置名称')
+                ->addFormItem('title', 'text', '配置标题', '配置标题')
+                ->addFormItem('value', 'textarea', '配置值', '配置值')
+                ->addFormItem('options', 'textarea', '配置项', '如果是单选、多选、下拉等类型 需要配置该项')
+                ->addFormItem('tip', 'textarea', '配置说明', '配置说明')
+                ->addFormItem('sort', 'num', '排序', '用于显示的顺序')
+                ->display();
+        }
+    }
 }

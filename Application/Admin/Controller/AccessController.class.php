@@ -3,6 +3,7 @@ namespace Admin\Controller;
 use Think\Controller;
 use Think\Page;
 use Common\Builder\ListBuilder;
+use Common\Builder\FormBuilder;
 class AccessController extends AdminController {
     public function index(){
         $keyword = I('keyword', '', 'string');
@@ -48,5 +49,30 @@ class AccessController extends AdminController {
             ->addRightButton('delete')                          // 添加删除按钮
             ->display();
 
+    }
+
+    public function add()
+    {
+        if (IS_POST) {
+            $accessObj = D('Access');
+            $data          = $accessObj->create();
+            if ($data) {
+                if ($accessObj->add($data)) {
+                    $this->success('新增成功', U('index'));
+                } else {
+                    $this->error('新增失败');
+                }
+            } else {
+                $this->error($accessObj->getError());
+            }
+        } else {
+            //使用FormBuilder快速建立表单页面。
+            $builder = new FormBuilder();
+            $builder->setMetaTitle('新增配置') //设置页面标题
+                ->setPostUrl(U('add')) //设置表单提交地址
+                ->addFormItem('uid', 'uid', 'UID', '用户ID')
+                ->addFormItem('group', 'select', '用户组', '不同用户组对应相应的权限', select_list_as_tree('Group'))
+                ->display();
+        }
     }
 }
