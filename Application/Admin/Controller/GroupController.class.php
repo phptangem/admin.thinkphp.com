@@ -1,5 +1,6 @@
 <?php
 namespace Admin\Controller;
+use Common\Builder\FormBuilder;
 use Think\Controller;
 use Util\Tree;
 use Common\Builder\ListBuilder;
@@ -64,6 +65,39 @@ class GroupController extends AdminController {
             $this->assign('all_module_menu_list', $allModuleMenuList);
             $this->assign('all_group', $allGroup);
             $this->assign('meta_title', '新增部门');
+            $this->display('add_edit');
+        }
+    }
+
+    public function edit($id){
+        if(IS_POST){
+
+        }else{
+            // 获取部门信息
+            $group              = D('Group')->find($id);
+            $group['menu_auth'] = json_decode($group['menu_auth'], true);
+
+            // 获取现有部门
+            $where['status']    = array('egt', 0);
+            $allGroup           = select_list_as_tree('Group', $where, '顶级部门');
+
+            // 获取所有安装并启用的功能模块
+            $moduleList = D('Module')
+                ->where(array('status' => 1))
+                ->select();
+            // 获取功能模块的后台菜单列表
+            $tree                 = new Tree();
+            $allModuleMenuList = array();
+            foreach ($moduleList as $key => $val) {
+                $temp                               = json_decode($val['admin_menu'], true);
+                $menuListItem                       = $tree->list2tree($temp);
+                $allModuleMenuList[$val['name']]    = $menuListItem[0];
+            }
+
+            $this->assign('info', $group);
+            $this->assign('all_module_menu_list', $allModuleMenuList);
+            $this->assign('all_group', $allGroup);
+            $this->assign('meta_title', '编辑部门');
             $this->display('add_edit');
         }
     }

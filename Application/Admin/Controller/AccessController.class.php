@@ -75,4 +75,19 @@ class AccessController extends AdminController {
                 ->display();
         }
     }
+
+    public function edit($id){
+        if(IS_POST){
+
+        }else{
+            $builder = new FormBuilder();
+            $builder->setPostUrl(U('edit')) // 设置表单提交地址
+                ->addFormItem('id', 'hidden', 'ID', 'ID')
+                ->addFormItem('uid', 'uid', 'UID', '用户ID')
+                ->addFormItem('group', 'select', '用户组', '不同用户组对应相应的权限', select_list_as_tree('Group'))
+                ->setFormData(D('Access')->find($id))
+                ->display();
+
+        }
+    }
 }

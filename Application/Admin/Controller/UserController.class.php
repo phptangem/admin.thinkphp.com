@@ -63,4 +63,30 @@ class UserController extends AdminController {
                 ->display();
         }
     }
+
+    public function edit($id){
+        if(IS_POST){
+
+        }else{
+            //获取账号信息
+            $formData = D('User')->find($id);
+            unset($formData['password']);
+
+            // 使用FormBuilder快速建立表单页面
+            $builder = new FormBuilder();
+            $builder->setMetaTitle('编辑用户') // 设置页面标题
+            ->setPostUrl(U('edit')) // 设置表单提交地址
+            ->addFormItem('id', 'hidden', 'ID', 'ID')
+                ->addFormItem('nickname', 'text', '昵称', '昵称')
+                ->addFormItem('username', 'text', '用户名', '用户名')
+                ->addFormItem('password', 'password', '密码', '密码')
+                ->addFormItem('email', 'text', '邮箱', '邮箱')
+                ->addFormItem('email_bind', 'radio', '邮箱绑定', '手机绑定', array('1' => '已绑定', '0' => '未绑定'))
+                ->addFormItem('mobile', 'text', '手机号', '手机号')
+                ->addFormItem('mobile_bind', 'radio', '手机绑定', '手机绑定', array('1' => '已绑定', '0' => '未绑定'))
+                ->addFormItem('avatar', 'picture', '头像', '头像')
+                ->setFormData($formData)
+                ->display();
+        }
+    }
 }

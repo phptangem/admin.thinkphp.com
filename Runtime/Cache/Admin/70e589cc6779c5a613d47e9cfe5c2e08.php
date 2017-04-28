@@ -261,7 +261,7 @@
                                 
     <div class="panel builder formbuilder-box">
         <div class="panel-body">
-            <form action="/admin.php?s=/Admin/Group/add.html" method="post" class="form form-builder">
+            <form action="/admin.php?s=/Admin/Group/edit/id/2.html" method="post" class="form form-builder">
                 <ul class="nav-tabs nav">
                     <li class="active"><a href="#tab1" data-toggle="tab">部门信息</a></li>
                     <?php if(($info["id"]) != "1"): ?><li><a href="#tab2" data-toggle="tab">系统权限</a></li><?php endif; ?>
@@ -409,7 +409,7 @@
                 
     <div class="panel builder formbuilder-box">
         <div class="panel-body">
-            <form action="/admin.php?s=/Admin/Group/add.html" method="post" class="form form-builder">
+            <form action="/admin.php?s=/Admin/Group/edit/id/2.html" method="post" class="form form-builder">
                 <ul class="nav-tabs nav">
                     <li class="active"><a href="#tab1" data-toggle="tab">部门信息</a></li>
                     <?php if(($info["id"]) != "1"): ?><li><a href="#tab2" data-toggle="tab">系统权限</a></li><?php endif; ?>
